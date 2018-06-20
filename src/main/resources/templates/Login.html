@@ -31,6 +31,8 @@
     <script type="text/javascript" src="js/lrscroll_1.js"></script>
 
     <!--这里不能缩写script结束标签，否则在Chrome上打不开这个页面-->
+    <!--https://github.com/js-cookie/js-cookie-->
+    <script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
     <script type="text/javascript" src="login.js"></script>
 
     <title>登录</title>
@@ -77,6 +79,11 @@
                         <td>&nbsp;</td>
                         <td style="font-size:12px; padding-top:20px;">
                 	<span style="font-family:'宋体';" class="fl">
+                        <script type="text/javascript">
+                            $(document).ready(function () {
+                                // $.cookie('username', 'admin', { expires: 7 });
+                            })
+                        </script>
                     	<label class="r_rad"><input type="checkbox"/></label><label class="r_txt">请保存我这次的登录信息</label>
                     </span>
                             <span class="fr"><a href="#" style="color:#ff4e00;">忘记密码</a></span>

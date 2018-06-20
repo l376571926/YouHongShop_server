@@ -84,7 +84,7 @@ public class ApiController {
         Map<String, String[]> parameterMap = httpServletRequest.getParameterMap();
         Set<String> strings = parameterMap.keySet();
         for (String string : strings) {
-            System.out.println(string + " " + Arrays.toString(parameterMap.get(string)));
+//            System.out.println(string + " " + Arrays.toString(parameterMap.get(string)));
         }
 
         if (!strings.contains("l_user")) {
@@ -109,7 +109,7 @@ public class ApiController {
         if (!user.getPassword().equals(password)) {
             return new BaseResponseBean(-1, "密码不正确");
         }
-        System.out.println("登录成功：" + userName + " " + password);
+//        System.out.println("登录成功：" + userName + " " + password);
         return new BaseResponseBean(0, "login success");
     }
 }
